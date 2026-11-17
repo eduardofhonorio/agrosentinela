@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Configuração local (copie de .env.example)
+.env
+
+# Dados gerados pelo seed/ETL
+dados/*.db
+dados/*.duckdb
+dados/*.tmp.duckdb
+
+# Apache Hop
+hop/audit/

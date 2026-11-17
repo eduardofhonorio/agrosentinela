@@ -1,0 +1,45 @@
+{
+  "metadataBaseFolder": "${PROJECT_HOME}/metadata",
+  "unitTestsBasePath": "${PROJECT_HOME}",
+  "dataSetsCsvFolder": "${PROJECT_HOME}/datasets",
+  "enforcingExecutionInHome": true,
+  "config": {
+    "variables": [
+      {
+        "name": "MYSQL_HOST",
+        "value": "localhost",
+        "description": "Servidor MySQL"
+      },
+      {
+        "name": "MYSQL_PORT",
+        "value": "3306",
+        "description": "Porta MySQL"
+      },
+      {
+        "name": "MYSQL_DB",
+        "value": "agrosentinela",
+        "description": "Banco de dados"
+      },
+      {
+        "name": "MYSQL_USER",
+        "value": "root",
+        "description": "Usuario MySQL"
+      },
+      {
+        "name": "MYSQL_PASSWORD",
+        "value": "root",
+        "description": "Senha MySQL"
+      },
+      {
+        "name": "OPEN_METEO_URL",
+        "value": "https://api.open-meteo.com/v1/forecast",
+        "description": "Endpoint da API de previsao"
+      },
+      {
+        "name": "PYTHON",
+        "value": "python",
+        "description": "Executavel do Python (Linux/Mac: python3 ou caminho do venv)"
+      }
+    ]
+  }
+}

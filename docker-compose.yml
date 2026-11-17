@@ -1,0 +1,27 @@
+# Sobe os dois servidores de banco usados pelo AgroSentinela.
+#   docker compose up -d
+# (SQLite e DuckDB são arquivos locais e não precisam de servidor.)
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: agro_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: agrosentinela
+      TZ: America/Sao_Paulo
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_dados:/var/lib/mysql
+
+  mongodb:
+    image: mongo:7
+    container_name: agro_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_dados:/data/db
+
+volumes:
+  mysql_dados:
+  mongo_dados:
